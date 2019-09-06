@@ -1,0 +1,14 @@
+# nohttp-jenkins
+
+Provides a https://jenkins.io/doc/book/pipeline/jenkinsfile/[Jenkinsfile] for working with https://github.com/spring-io/nohttp[nohttp].
+
+
+* Create a https://jenkins.io/doc/book/pipeline/[Pipeline] using `Pipeline script from SCM` pointing to this git repository.
+* Use `This project is parameterized` to define a `String Parameter`
+** **Name** `SCM_URL` 
+** **Default Value** that points to the git URL to clone and then check for restricted usage of `http://` (i.e. `https://github.com/spring-projects/spring-security.wiki.git`)
+* For the **Pipeline** _Definition_ Use `Pipeline script from SCM`
+** **SCM** `Git`
+*** **Repository URL** with the value of this GitHub repository (i.e. `https://github.com/spring-io/nohttp-jenkinsfile`)
+*** Preserve the default values for the remaining fields
+* Save and run the build
