@@ -1,3 +1,5 @@
+# nohttp-jenkinsfile is no longer actively maintained by VMware, Inc.
+
 # nohttp-jenkins
 
 Provides a https://jenkins.io/doc/book/pipeline/jenkinsfile/[Jenkinsfile] for working with https://github.com/spring-io/nohttp[nohttp].
